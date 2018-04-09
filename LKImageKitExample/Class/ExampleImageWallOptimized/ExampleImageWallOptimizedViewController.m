@@ -71,7 +71,7 @@
     loadingRequest.priority                 = NSOperationQueuePriorityVeryHigh;
     loadingRequest.dataCacheEnabled         = YES;
     imageCell.imageView.loadingImageRequest = loadingRequest;
-    imageCell.imageView.URL                 = [ExampleUtil imageURLFromFileID:indexPath.item + 1 size:256];
+    imageCell.imageView.URL                 = [ExampleUtil imageURLFromFileID:indexPath.item + 1 size:1024];
 }
 
 - (void)collectionView:(UICollectionView *)collectionView prefetchItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths

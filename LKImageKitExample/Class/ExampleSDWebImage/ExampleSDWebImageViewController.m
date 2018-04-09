@@ -67,7 +67,7 @@
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ExampleSDWebImageCell *imageCell                  = (ExampleSDWebImageCell *) cell;
-    [imageCell.imageView sd_setImageWithURL:[NSURL URLWithString:[ExampleUtil imageURLFromFileID:indexPath.item + 1 size:256]]];
+    [imageCell.imageView sd_setImageWithURL:[NSURL URLWithString:[ExampleUtil imageURLFromFileID:indexPath.item + 1 size:1024]]];
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
